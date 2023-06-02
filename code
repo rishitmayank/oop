@@ -1,0 +1,32 @@
+class animal:
+  species = None
+  name = None
+  sound = None
+
+  def __init__(self, name, species, sound, color):
+    self.name = name
+    self.species = species
+    self.sound = sound
+    self.color = color
+
+  def talk(self):
+    print(f"{self.name} says {self.sound}")
+
+class bird(animal):
+  color = None
+
+  def __init__(self, color):
+    self.name = "Bird"
+    self.species = "Avian"
+    self.sound = "Tweet"
+    self.color = color
+
+cow = animal("Cow", "Bo Taurus", "Moo", "White")
+cow.talk()
+
+dog = animal("rmintrude", "Bee Laurus", "Woof", "Brown")
+dog.talk()
+
+polly = bird("Green")
+polly.talk()
+print(polly.color)
